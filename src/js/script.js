@@ -43,7 +43,8 @@ function renderFooter() {
 function markActiveNav() {
   const path = location.pathname.split("/").pop() || "index.html";
   document.querySelectorAll(".nav-links a").forEach(a => {
-    if (a.getAttribute("href") === path) a.classList.add("active");
+    const linkPath = new URL(a.getAttribute("href"), location.href).pathname.split("/").pop();
+    if (linkPath === path) a.classList.add("active");
   });
 }
 
