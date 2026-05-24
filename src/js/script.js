@@ -47,7 +47,7 @@ function markActiveNav() {
   });
 }
 
-// Form de contato
+
 function setupContactForm() {
   const form = document.getElementById("contact-form");
   if (!form) return;
