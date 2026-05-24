@@ -1,4 +1,3 @@
-
 const contactData = {
   phone: "(11) 99999-8888",
   email: "contato@lojinhamaneiraofc.com.br",
